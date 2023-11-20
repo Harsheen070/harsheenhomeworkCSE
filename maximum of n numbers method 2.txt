@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() 
+{
+    int n, num, max;
+    printf("Enter the number of values: ");
+    scanf("%d", &n);
+
+    if (n <= 0)
+   {
+        printf("Please enter a valid number of values.\n");
+        return 1;
+    }
+
+    printf("Enter %d numbers:\n", n);
+    scanf("%d", &num);
+
+    max = num; // Initialize max with the first number
+
+    for (int i = 1; i < n; i++) {
+        scanf("%d", &num);
+        if (num > max) {
+            max = num; // Update max if a larger number is encountered
+        }
+    }
+    //output statement 
+    printf("The maximum of the %d numbers is: %d\n", n, max);
+
+    return 0;
+}
