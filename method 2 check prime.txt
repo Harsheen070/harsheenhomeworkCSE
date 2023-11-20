@@ -1,0 +1,41 @@
+expereiment 5(a):write a program to check if a number is prime or not using while loop
+//title of program
+//program to check if number is prime or not
+//header file
+#include <stdio.h>
+//function heading
+int main()
+{
+    //declaring variables
+    int num,isPrime = 1; // Assume the number is prime initially
+    //output statement
+    printf("Enter a number: ");
+   //input statement
+    scanf("%d", &num);
+    if (num <= 1) 
+   {
+        isPrime = 0; // 0 and 1 are not prime numbers
+    } 
+   else 
+    {
+        int i = 2;
+        while (i * i <= num) 
+            {
+            if (num % i == 0) 
+            {
+                isPrime = 0; // It's not a prime number
+                break;
+            }
+            i++;
+        }
+    }
+
+    if (isPrime) 
+    {
+        printf("%d is a prime number.\n", num);
+    } else {
+        printf("%d is not a prime number.\n", num);
+    }
+
+    return 0;
+}
