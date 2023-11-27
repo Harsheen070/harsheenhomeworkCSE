@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num, n,i, isPrime;
+
+    printf("Enter the range: ");
+    scanf("%d", &n);
+
+    printf("Prime numbers between 1 and %d are: ", n);
+
+    for (num = 2; num <= n; num++) {
+        isPrime = 1; // Assume num is prime
+
+        for (i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                isPrime = 0; // Not prime, set the flag to 0
+                break;
+            }
+        }
+
+        if (isPrime) {
+            printf("%d, ", num);
+        }
+    }
