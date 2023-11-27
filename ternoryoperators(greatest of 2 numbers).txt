@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+{
+int a,b,big;
+printf("enter 2 numbers");
+scanf("%d%d",&a,&b);
+big=a>b?a:b;
+printf("the greatest number is=%d",big);
+}
