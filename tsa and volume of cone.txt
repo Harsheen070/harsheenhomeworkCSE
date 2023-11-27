@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+{
+int r,h;
+printf("ener r and h values:");
+scanf("%d%d",&r,&h);
+float tsa,volume;
+tsa=3.14*r*(r+sqrt(h*h+r*r));
+volume=0.33*(3.14*r*r*h);
+printf("tsa=%f",tsa);
+printf("volume=%f",volume);
+}
