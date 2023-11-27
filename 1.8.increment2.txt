@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+int i=10,j;
+j=i+++j
+printf("j=%d\n",j);
+}
